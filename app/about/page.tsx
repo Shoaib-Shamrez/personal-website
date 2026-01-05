@@ -3,14 +3,12 @@
 import Markdown from 'markdown-to-jsx';
 
 import Link from 'next/link';
-import React from 'react';
 
 import { aboutMarkdown } from '@/data/about';
 
 import PageWrapper from '../components/PageWrapper';
 
-const count = (str: string) =>
-  str.split(/\s+/).filter((word) => word !== '').length;
+const count = (str: string) => str.split(/\s+/).filter((word) => word !== '').length;
 
 export default function AboutPage() {
   return (

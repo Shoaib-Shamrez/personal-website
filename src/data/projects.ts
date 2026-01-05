@@ -9,48 +9,49 @@ export interface Project {
 
 const data: Project[] = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
-    image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
-    desc:
-      'Built for a social impact hackathon. ' +
-      'NearestDollar connected to your bank accounts, credit cards, ' +
-      'or debit cards and rounded up your purchases to donate the balance to ' +
-      'the charity of your choice.',
-  },
-  {
-    title: 'Harvest',
-    subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
-    link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.jpg',
-    date: '2015-09-20',
-    desc:
-      'Won ~ $7000 in prizes for an advanced, low cost monitoring solution ' +
-      'for crops. Harvest was designed to catch irrigation leaks, overwatering, ' +
-      'and nutrient deficiencies at an affordable price for the developing world.',
-  },
-  {
-    title: 'Space Potato',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
-    link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2015-06-28',
-    desc:
-      'Launched a potato battery powered weather balloon with two cameras ' +
-      'and gps transponder. Resulting photos were published in a coffee table book. ' +
-      'You can email me for a copy.',
-  },
-  {
-    title: 'Cat Detector',
-    subtitle: 'A convolutional neural network to classify cats! (and dogs)',
-    image: '/images/projects/catdetector.jpg',
-    date: '2015-05-15',
-    desc:
-      'Trained a convolutional neural network to classify between ~ 80 cats breeds. ' +
-      'Over 60,000 cats were classified before server bills made the project too expensive ' +
-      'to continue hosting.',
-  },
+  title: 'uXL-LMS Web Application',
+  subtitle: 'Team Project — uExel Platform',
+  image: '/images/projects/nearestdollar.jpg', // your image path
+  date: '2024-03-01',
+  desc:
+    'Developed the full public-facing layout and responsive design for uXL-LMS from Figma to production using React, TypeScript, TailwindCSS, and Ant Design. ' +
+    'This includes landing, About Us, Contact, Login, and Signup pages that users see before authentication, with pixel-perfect styling and smooth navigation. ' +
+    'After login, users enter the core LMS system where students, teachers, and admins access their respective dashboards (not included here). ' +
+    'Worked closely with the backend team to ensure seamless integration of frontend components and authentication flows.',
+},
+{
+  title: 'uXL-POS Web Application',
+  subtitle: 'Team Project — uExel Platform',
+  image: '/images/projects/harvest.jpg', // your image path
+  date: '2024-05-15',
+  desc:
+    'Contributed to core features, improved code structure, fixed bugs, and helped make uXL-POS production-ready as part of the uExel development team. ' +
+    'Worked collaboratively with other developers to enhance frontend components, optimize performance, and ensure seamless integration with backend services. ' +
+    'Used React, TypeScript, TailwindCSS, and Ant Design to implement improvements, refine UI behavior, and support reliable, scalable delivery.',
+},
+{
+  title: 'TaskFlow',
+  subtitle: 'Personal Project — Full-Stack Task Management App',
+  image: '/images/projects/spacepotato.jpg', // replace with your project image
+  date: '2024-06-10',
+  desc:
+    'Built a full-stack Kanban-style task management application with React, Node.js, Express, MongoDB, and TailwindCSS. ' +
+    'TaskFlow allows users to manage projects, boards, tasks, columns, and team members with an intuitive drag-and-drop interface. ' +
+    'Implemented frontend state management with Redux, integrated REST APIs, and deployed using Render and Vercel for live production access.'+
+   'This project demonstrates skills in MongoDB Atlas, frontend development, REST APIs, Redux state management, routing, MERN stack, deployment on Render and Vercel, and version control with GitHub.',
+},
+{
+  title: 'Piano Trainer',
+  subtitle: 'Chrome Extension — Virtual Piano Learning Tool',
+  image: '/images/projects/catdetector.png', // replace with your project image
+  date: '2024-07-05',
+  desc:
+    'Developed a Chrome Extension that allows users to play a virtual piano and learn songs directly in the browser. ' +
+    'Built with React and Vite, and packaged as a web extension using vite-plugin-web-extension. ' +
+    'This project showcases skills in frontend development, React component architecture, browser extensions, and modern build tools.',
+},
+
+
 ];
 
 export default data;

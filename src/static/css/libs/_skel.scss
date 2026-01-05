@@ -696,7 +696,7 @@ $vendor-values: ('filter', 'flex', 'linear-gradient', 'radial-gradient', 'transf
     html input[type='button'],
     input[type='reset'],
     input[type='submit'] {
-      -webkit-appearance: button;
+      appearance: button;
       cursor: pointer;
     }
     button[disabled],
@@ -721,7 +721,7 @@ $vendor-values: ('filter', 'flex', 'linear-gradient', 'radial-gradient', 'transf
       height: auto;
     }
     input[type='search'] {
-      -webkit-appearance: textfield;
+      appearance: textfield;
       box-sizing: content-box;
     }
     input[type='search']::-webkit-search-cancel-button,
