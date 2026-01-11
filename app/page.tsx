@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import React from 'react';
 
 import PageWrapper from './components/PageWrapper';
 
 export const metadata: Metadata = {
   description:
-    'Co-founder & CTO building LLM security tools. Previously VP Engineering, YC alum, Stanford ICME.',
+    'Full Stack Developer Portfolio and Personal Website of Shoaib Shamrez - showcasing projects, skills, and experience in web development.',
 };
 
 export default function HomePage() {

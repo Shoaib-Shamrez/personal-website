@@ -20,10 +20,7 @@ type ButtonAction = {
   label: string;
 };
 
-const buttonReducer = (
-  state: ButtonState,
-  action: ButtonAction,
-): ButtonState => {
+const buttonReducer = (state: ButtonState, action: ButtonAction): ButtonState => {
   switch (action.type) {
     case 'TOGGLE_CATEGORY': {
       // Toggle button that was clicked. Turn all other buttons off.
@@ -56,20 +53,12 @@ const Skills: React.FC<SkillsProps> = ({ skills, categories }) => {
 
   const getButtons = () =>
     Object.keys(buttons).map((key) => (
-      <CategoryButton
-        label={key}
-        key={key}
-        active={buttons}
-        handleClick={handleChildClick}
-      />
+      <CategoryButton label={key} key={key} active={buttons} handleClick={handleChildClick} />
     ));
 
   const getRows = () => {
     // search for true active categories
-    const actCat = Object.keys(buttons).reduce(
-      (cat, key) => (buttons[key] ? key : cat),
-      'All',
-    );
+    const actCat = Object.keys(buttons).reduce((cat, key) => (buttons[key] ? key : cat), 'All');
 
     const comparator = (a: Skill, b: Skill) => {
       let ret = 0;
@@ -85,9 +74,7 @@ const Skills: React.FC<SkillsProps> = ({ skills, categories }) => {
     return skills
       .sort(comparator)
       .filter((skill) => actCat === 'All' || skill.category.includes(actCat))
-      .map((skill) => (
-        <SkillBar categories={categories} data={skill} key={skill.title} />
-      ));
+      .map((skill) => <SkillBar categories={categories} data={skill} key={skill.title} />);
   };
 
   return (

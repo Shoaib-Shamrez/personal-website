@@ -26,19 +26,31 @@ export const metadata: Metadata = {
     template: '%s | Shoaib Shamrez',
   },
   description:
-    'Co-founder & CTO building LLM security tools. Previously VP Engineering, YC alum, Stanford ICME.',
-  keywords: ['Shoaib Shamrez', 'LLM security', 'machine learning', 'CTO', 'startup founder', 'YC'],
+    'Full Stack Developer Portfolio and Personal Website of Shoaib Shamrez - showcasing projects, skills, and experience in web development.',
+  keywords: [
+    'Shoaib Shamrez',
+    'Shoaib',
+    'Shamrez',
+    'Portfolio',
+    'Personal Website',
+    'Resume',
+    'Projects',
+    'MERN Stack',
+    'Full Stack Developer',
+    'Web Developer',
+    'Software Engineer',
+  ],
   authors: [{ name: 'Shoaib Shamrez' }],
   creator: 'Shoaib Shamrez',
-  metadataBase: new URL('https://mldangelo.com'),
+  metadataBase: new URL('https://shoaibshamrez.netlify.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://mldangelo.com',
+    url: 'https://shoaibshamrez.netlify.com',
     siteName: 'Shoaib Shamrez',
     title: 'Shoaib Shamrez',
     description:
-      'Co-founder & CTO building LLM security tools. Previously VP Engineering, YC alum, Stanford ICME.',
+      'Full Stack Developer Portfolio and Personal Website of Shoaib Shamrez - showcasing projects, skills, and experience in web development.',
     images: [
       {
         url: '/images/me.jpg',
@@ -64,7 +76,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${sourceSans.variable} ${raleway.variable}`}>
-      <body>
+      <body suppressHydrationWarning={true}>
         <div id="wrapper">
           <Navigation />
           {children}

@@ -1,6 +1,6 @@
 export interface Skill {
   title: string;
-  competency: number;
+  competency: number; // 1–5
   category: string[];
 }
 
@@ -12,118 +12,128 @@ export interface Category {
 const skills: Skill[] = [
   // Languages
   {
-    title: 'Python',
-    competency: 5,
-    category: ['Languages', 'ML Engineering'],
+    title: 'JavaScript',
+    competency: 4,
+    category: ['Languages', 'Web Development'],
   },
   {
     title: 'TypeScript',
+    competency: 4,
+    category: ['Languages', 'Web Development'],
+  },
+  {
+    title: 'HTML5',
     competency: 5,
     category: ['Languages', 'Web Development'],
   },
   {
-    title: 'SQL',
+    title: 'CSS3',
     competency: 4,
+    category: ['Languages', 'Web Development'],
+  },
+  {
+    title: 'SQL',
+    competency: 3,
     category: ['Languages', 'Databases'],
   },
-  // AI & LLM
+
+  // Frontend
   {
-    title: 'AI Agents',
-    competency: 5,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'LLM Evaluation',
-    competency: 5,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'AI Red-teaming',
-    competency: 5,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'LLM APIs',
-    competency: 5,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'RAG',
+    title: 'React.js',
     competency: 4,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'Prompt Engineering',
-    competency: 4,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'Vector Databases',
-    competency: 4,
-    category: ['ML Engineering', 'Databases'],
-  },
-  {
-    title: 'PyTorch',
-    competency: 4,
-    category: ['ML Engineering'],
-  },
-  {
-    title: 'Pandas',
-    competency: 5,
-    category: ['ML Engineering', 'Data Engineering'],
-  },
-  // Web Development
-  {
-    title: 'Node.js',
-    competency: 5,
-    category: ['Web Development'],
-  },
-  {
-    title: 'FastAPI',
-    competency: 4,
-    category: ['Web Development'],
+    category: ['Frontend', 'Web Development'],
   },
   {
     title: 'Next.js',
     competency: 3,
-    category: ['Web Development'],
+    category: ['Frontend', 'Web Development'],
   },
+  {
+    title: 'Tailwind CSS',
+    competency: 4,
+    category: ['Frontend', 'UI'],
+  },
+  {
+    title: 'Ant Design',
+    competency: 4,
+    category: ['Frontend', 'UI'],
+  },
+  {
+    title: 'Redux',
+    competency: 3,
+    category: ['Frontend', 'State Management'],
+  },
+
+  // Backend
+  {
+    title: 'Node.js',
+    competency: 4,
+    category: ['Backend', 'Web Development'],
+  },
+  {
+    title: 'Express.js',
+    competency: 4,
+    category: ['Backend', 'Web Development'],
+  },
+  {
+    title: 'REST APIs',
+    competency: 4,
+    category: ['Backend', 'Web Development'],
+  },
+
   // Databases
   {
-    title: 'PostgreSQL',
+    title: 'MongoDB',
     competency: 4,
     category: ['Databases'],
   },
   {
-    title: 'Redis',
+    title: 'MongoDB Atlas',
     competency: 3,
     category: ['Databases'],
   },
-  // Infrastructure
   {
-    title: 'AWS',
-    competency: 4,
-    category: ['Infrastructure'],
-  },
-  {
-    title: 'Docker',
-    competency: 4,
-    category: ['Infrastructure'],
-  },
-  {
-    title: 'Kubernetes',
+    title: 'MySQL',
     competency: 3,
-    category: ['Infrastructure'],
+    category: ['Databases'],
+  },
+
+  // Tools & DevOps
+  {
+    title: 'Git & GitHub',
+    competency: 4,
+    category: ['Tools'],
   },
   {
-    title: 'Observability',
+    title: 'Postman',
     competency: 4,
-    category: ['Infrastructure', 'ML Engineering'],
+    category: ['Tools'],
+  },
+  {
+    title: 'Vercel',
+    competency: 3,
+    category: ['Deployment'],
+  },
+  {
+    title: 'Render',
+    competency: 3,
+    category: ['Deployment'],
+  },
+
+  // Other
+  {
+    title: 'Chrome Extensions',
+    competency: 3,
+    category: ['Web Development'],
+  },
+  {
+    title: 'Agile / Scrum',
+    competency: 3,
+    category: ['Project Management'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
-// this is a list of colors that I like. The length should be === to the
-// number of categories. Re-arrange this list until you find a pattern you like.
+// Colors must match number of categories
 const colors: string[] = [
   '#6968b3',
   '#37b1f5',
@@ -132,10 +142,8 @@ const colors: string[] = [
   '#e47272',
   '#cc7b94',
   '#3896e2',
-  '#c3423f',
-  '#d75858',
-  '#747fff',
   '#64cb7b',
+  '#747fff',
 ];
 
 const categories: Category[] = Array.from(

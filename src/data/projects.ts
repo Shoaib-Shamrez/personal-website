@@ -10,8 +10,8 @@ export interface Project {
 const data: Project[] = [
   {
   title: 'uXL-LMS Web Application',
-  subtitle: 'Team Project — uExel Platform',
-  image: '/images/projects/nearestdollar.jpg', // your image path
+  subtitle: 'Team Project — uExel Solutions',
+  image: '/images/projects/uxl-ms.png', // your image path
   date: '2024-03-01',
   desc:
     'Developed the full public-facing layout and responsive design for uXL-LMS from Figma to production using React, TypeScript, TailwindCSS, and Ant Design. ' +
@@ -22,7 +22,7 @@ const data: Project[] = [
 {
   title: 'uXL-POS Web Application',
   subtitle: 'Team Project — uExel Platform',
-  image: '/images/projects/harvest.jpg', // your image path
+  image: '/images/projects/uxl-POS.png', 
   date: '2024-05-15',
   desc:
     'Contributed to core features, improved code structure, fixed bugs, and helped make uXL-POS production-ready as part of the uExel development team. ' +
@@ -32,7 +32,7 @@ const data: Project[] = [
 {
   title: 'TaskFlow',
   subtitle: 'Personal Project — Full-Stack Task Management App',
-  image: '/images/projects/spacepotato.jpg', // replace with your project image
+  image: '/images/projects/login.jpeg', // replace with your project image
   date: '2024-06-10',
   desc:
     'Built a full-stack Kanban-style task management application with React, Node.js, Express, MongoDB, and TailwindCSS. ' +
@@ -43,7 +43,7 @@ const data: Project[] = [
 {
   title: 'Piano Trainer',
   subtitle: 'Chrome Extension — Virtual Piano Learning Tool',
-  image: '/images/projects/catdetector.png', // replace with your project image
+  image: '/images/projects/Piano_trainer.jpg', // replace with your project image
   date: '2024-07-05',
   desc:
     'Developed a Chrome Extension that allows users to play a virtual piano and learn songs directly in the browser. ' +

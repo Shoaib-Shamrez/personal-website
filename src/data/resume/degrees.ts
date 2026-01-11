@@ -1,7 +1,7 @@
 export interface Degree {
   school: string;
   degree: string;
-
+  link?: string;
   year: number;
 }
 
