@@ -19,7 +19,6 @@ const Stats: React.FC = () => {
       try {
         const res = await fetch('https://api.github.com/repos/Shoaib-Shamrez/personal-website');
         const resData: GitHubRepoData = await res.json();
-        console.log(resData);
 
         setResponseData(
           initialData.map((field) => ({
@@ -38,9 +37,6 @@ const Stats: React.FC = () => {
 
     fetchData();
   }, []);
-  useEffect(() => {
-    console.log(data);
-  });
 
   return (
     <div>
