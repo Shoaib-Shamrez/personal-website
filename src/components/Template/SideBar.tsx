@@ -14,7 +14,13 @@ const SideBar: React.FC = () => {
     <section id="sidebar">
       <section id="intro">
         <Link href="/" className="logo">
-          <Image src="/images/me.jpg" alt="Shoaib Shamrez" width={200} height={200} priority />
+          <Image
+            src="/images/me.jpg"
+            alt="Shoaib Shamrez - Best Web Developer"
+            width={200}
+            height={200}
+            priority
+          />
         </Link>
         <header>
           <h2>Shoaib Shamrez</h2>
