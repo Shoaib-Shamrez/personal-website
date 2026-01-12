@@ -32,7 +32,7 @@ export default function HomePage() {
         </p>
         <p>
           {' '}
-          Source available <a href="#">here</a>.
+          Source available <a href="https://github.com/Shoaib-Shamrez/personal-website">here</a>.
         </p>
       </article>
     </PageWrapper>
