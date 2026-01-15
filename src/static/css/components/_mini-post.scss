@@ -81,7 +81,16 @@
     }
   }
 }
-
+.project-header{
+  display: flex;
+  justify-content: space-between;
+}
+.github-link{
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .mini-posts {
   margin: 0 0 _size(element-margin);
   @include breakpoint(large) {

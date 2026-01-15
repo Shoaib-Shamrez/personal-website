@@ -5,13 +5,15 @@ export interface Project {
   image: string;
   date: string;
   desc: string;
+  github?: string;
 }
 
 const data: Project[] = [
   {
   title: 'uXL-LMS Web Application',
   subtitle: 'Team Project — uExel Solutions',
-  image: '/images/projects/uxl-ms.png', // your image path
+  image: '/images/projects/uxl-ms.png', 
+  github: 'https://github.com/uExel/levelup_front/',
   date: '2024-03-01',
   desc:
     'Developed the full public-facing layout and responsive design for uXL-LMS from Figma to production using React, TypeScript, TailwindCSS, and Ant Design. ' +
@@ -23,6 +25,7 @@ const data: Project[] = [
   title: 'uXL-POS Web Application',
   subtitle: 'Team Project — uExel Platform',
   image: '/images/projects/uxl-POS.png', 
+  github: 'https://github.com/uExel/uXL-POS',
   date: '2024-05-15',
   desc:
     'Contributed to core features, improved code structure, fixed bugs, and helped make uXL-POS production-ready as part of the uExel development team. ' +
@@ -32,7 +35,8 @@ const data: Project[] = [
 {
   title: 'TaskFlow',
   subtitle: 'Personal Project — Full-Stack Task Management App',
-  image: '/images/projects/login.jpeg', // replace with your project image
+  image: '/images/projects/login.jpeg',  
+  github: 'https://github.com/Shoaib-Shamrez/TaskFlow',
   date: '2024-06-10',
   desc:
     'Built a full-stack Kanban-style task management application with React, Node.js, Express, MongoDB, and TailwindCSS. ' +
@@ -43,13 +47,51 @@ const data: Project[] = [
 {
   title: 'Piano Trainer',
   subtitle: 'Chrome Extension — Virtual Piano Learning Tool',
-  image: '/images/projects/Piano_trainer.jpg', // replace with your project image
+  github: 'https://github.com/Shoaib-Shamrez/Piano-Trainer',
+  image: '/images/projects/Piano_trainer.jpg',  
   date: '2024-07-05',
   desc:
     'Developed a Chrome Extension that allows users to play a virtual piano and learn songs directly in the browser. ' +
     'Built with React and Vite, and packaged as a web extension using vite-plugin-web-extension. ' +
     'This project showcases skills in frontend development, React component architecture, browser extensions, and modern build tools.',
 },
+{
+  title: 'Lottery Results Platform',
+  subtitle: 'Results-Driven Web Application',
+    image: '/images/projects/Lottery.png',
+    github: 'https://github.com/Shoaib-Shamrez/LotteryResults',
+  date: '2025-11-15',
+  desc:
+    'A performance-focused lottery results platform designed for accuracy, speed, and scalability. ' +
+    'Includes a dynamic admin panel for managing results, automatic sitemap generation for improved search indexing, ' +
+    'and an SEO-friendly architecture optimized for fast load times. ' +
+    'Built to prioritize functionality, data reliability, and long-term maintainability over visuals alone.',
+},
+{
+  title: 'Elegant Store - Ecomerce Website',
+  subtitle: 'Horizon Tech Services',
+  image: '/images/projects/Elegant-store.jpg',  
+  github: 'https://github.com/Shoaib-Shamrez/Elegant-Store',
+  date: '2024-12-22',
+  desc:
+    'A full-stack e-commerce web application with complete user and admin workflows. ' +
+    'Users can authenticate, browse and search products, manage cart items, select variants, and complete purchases using multiple payment methods. ' +
+    'The system includes a dedicated admin panel for product and supplier management, sales and purchase tracking, purchase order creation, and invoice generation (view, print, and download). ' +
+    'Built using a RESTful architecture to connect a React-based frontend with a Node.js and Express backend, backed by a MySQL database.',
+},
+{
+  title: 'Online Code Editor (CodePen Clone)',
+  subtitle: 'Frontend Web Application',
+  github: 'https://github.com/Shoaib-Shamrez/CodeEditor',
+  image: '/images/projects/Code-Editor-2.jpg',  
+  date: '2024-05-30',
+  desc:
+    'A browser-based code editor inspired by CodePen, built using React and CodeMirror. ' +
+    'Supports live editing of HTML, CSS, and JavaScript with real-time preview rendering. ' +
+    'Focused on smooth editor performance, clean UI layout, and accurate code execution. ' +
+    'Implemented using react-codemirror-2 to provide a developer-friendly editing experience.',
+}
+
 
 
 ];
