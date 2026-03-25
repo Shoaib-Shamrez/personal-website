@@ -10,6 +10,18 @@ export interface Project {
 
 const data: Project[] = [
   {
+  title: 'OmniScribe AI',
+  subtitle: 'Personal Project = Speech to Text Web App',
+  image: '/images/projects/omniScribe_Frontend.png',
+  github: 'https://github.com/Shoaib-Shamrez/OmniScribe',
+  date: '2026-03-24',
+  desc:
+    'Built a full stack speech-to-text API that transcribes audio and video files of any length — including 2-3 hour meeting recordings — into timestamped text using OpenAI Whisper. ' +
+    'Designed an async producer-consumer architecture where FastAPI receives the upload and responds instantly with a job ID, while a Celery worker processes the file in the background using Redis as the job queue. ' +
+    'Integrated FFmpeg to extract audio tracks from video files before transcription, reducing file size by up to 80% and improving processing speed. ' +
+    'Built the frontend in React with TypeScript and Tailwind CSS, featuring a drag and drop upload zone, real time job status polling, and an interactive timestamped transcript view.',
+},
+  {
   title: 'uXL-LMS Web Application',
   subtitle: 'Team Project — uExel Solutions',
   image: '/images/projects/uxl-ms.png', 
