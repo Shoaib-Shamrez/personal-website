@@ -85,11 +85,17 @@
   display: flex;
   justify-content: space-between;
 }
-.github-link{
+.link{
   font-size: 14px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 10px  ;
   align-items: center;
+}
+.github{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
 }
 .mini-posts {
   margin: 0 0 _size(element-margin);

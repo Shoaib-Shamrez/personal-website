@@ -15,7 +15,7 @@ import PageWrapper from '../components/PageWrapper';
 export const metadata: Metadata = {
   title: 'Resume',
   description:
-    "Michael D'Angelo's Resume. Promptfoo, Smile ID, Arthena, Matroid, Stanford ICME, YC alum.",
+    'Shoaib Shamrez Resume. Standup intelligence System, Task Flow, uXL-LMS, uXL-POS, MERN, Nestjs, Next.js Graduate, Arid Agriculture University.',
 };
 
 const sections = [

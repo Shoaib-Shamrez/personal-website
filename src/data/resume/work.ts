@@ -1,7 +1,8 @@
 /**
  * Conforms to https://jsonresume.org/schema/
  */
-export interface Position {
+export interface Position
+{
   name: string;
   position: string;
   url: string;
@@ -13,19 +14,18 @@ export interface Position {
 
 const work: Position[] = [
   {
-    name: 'uExel',
-    position: 'Full Stack Engineer (Intern)',
-    url: 'https://uexel.com',
-    startDate: '2025-10-01',
-    summary:
-      'Worked as a Full Stack Intern on real production systems, contributing to internal products including uXL-LMS and uXL-POS. ' +
-      'Collaborated closely with senior developers to build features, fix bugs, and improve overall code quality in a fast-paced on-site environment.',
-    highlights: [
-      'Developed and maintained full-stack features using React, Node.js, Express, and TypeScript.',
-      'Worked with REST APIs using Postman and integrated backend services into frontend components.',
-      'Contributed to production readiness by fixing bugs, refactoring components, and improving code structure.',
-      'Collaborated with the team using GitHub and followed modern development workflows.',
-    ],
+    "name": "uExel",
+    "position": "Full Stack Engineer",
+    "url": "https://uexel.com",
+    "startDate": "2025-10-01",
+    "summary": "Full-time Full Stack Engineer building internal products and automation tools for engineering teams. Responsible for end-to-end feature development, system architecture, and production deployments.",
+    "highlights": [
+      "Developed and maintained full-stack features using React, Node.js, Express, TypeScript, and PostgreSQL.",
+      "Designed and built StandupBot Intelligence – an AI-powered Slack bot that automatically reconciles daily standups with GitHub commits/PRs using Claude API, eliminating manual reporting for managers.",
+      "Integrated GitHub webhooks, JWT authentication, REST APIs with pagination, and weekly summary digests for leadership.",
+      "Contributed to production systems (uXL-LMS, uXL-POS) by fixing bugs, refactoring components, and improving code quality.",
+      "Collaborated with the team using GitHub, Postman, and followed Agile development workflows."
+    ]
   },
   {
     name: 'Royalton Hotel Rawalpindi',

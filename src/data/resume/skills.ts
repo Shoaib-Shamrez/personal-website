@@ -1,10 +1,12 @@
-export interface Skill {
+export interface Skill
+{
   title: string;
   competency: number; // 1–5
   category: string[];
 }
 
-export interface Category {
+export interface Category
+{
   name: string;
   color: string;
 }
@@ -13,6 +15,11 @@ const skills: Skill[] = [
   // Languages
   {
     title: 'JavaScript',
+    competency: 4,
+    category: ['Languages', 'Web Development'],
+  },
+  {
+    title: 'Nest Js',
     competency: 4,
     category: ['Languages', 'Web Development'],
   },
@@ -97,6 +104,11 @@ const skills: Skill[] = [
     competency: 3,
     category: ['Databases'],
   },
+  {
+    title: 'Posgress',
+    competency: 3,
+    category: ['Databases'],
+  },
 
   // Tools & DevOps
   {
@@ -116,6 +128,11 @@ const skills: Skill[] = [
   },
   {
     title: 'Render',
+    competency: 3,
+    category: ['Deployment'],
+  },
+  {
+    title: 'DigitalOcean',
     competency: 3,
     category: ['Deployment'],
   },
