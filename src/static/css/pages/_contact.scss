@@ -10,6 +10,9 @@
 
     .inline-container {
       width: 100%;
+      display: flex;
+      gap: 5px;
+      align-items: center;
 
       span:focus {
         display: inline-block;

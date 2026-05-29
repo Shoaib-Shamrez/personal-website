@@ -32,17 +32,20 @@ const SideBar: React.FC = () => {
 
       <section className="blurb">
         <h2>About</h2>
+
         <p>
-          Hi, I'm Shoaib Shamrez. I am a Full-Stack Web Developer specializing in the{' '}
-          <a href="https://react.dev/">MERN stack</a>, with experience in{' '}
-          <a href="https://tailwindcss.com/">TailwindCSS</a>,{' '}
-          <a href="https://mui.com/">Material UI</a>,{' '}
-          <a href="https://react-bootstrap.github.io/">React-Bootstrap</a>, and modern web
-          technologies. I have contributed to projects like{' '}
-          <a href="https://shoaibshamrez.netlify.app/uXL-LMS">uXL-LMS</a> and{' '}
-          <a href="https://shoaibshamrez.netlify.app/uXL-POS">uXL-POS</a> under the{' '}
-          <a href="https://shoaibshamrez.netlify.app/">uExel platform</a>, delivering dynamic and
-          responsive applications as part of a collaborative team.
+          Hi, I'm Shoaib Shamrez. I am a Full-Stack Engineer specializing in{' '}
+          <a href="https://react.dev/">React</a>, <a href="https://nodejs.org/">Node.js</a>,{' '}
+          <a href="https://www.typescriptlang.org/">TypeScript</a>, and{' '}
+          <a href="https://www.postgresql.org/">PostgreSQL</a>. I've built end‑to‑end systems like{' '}
+          <strong>StandupBot Intelligence</strong> — an AI‑powered Slack bot that reconciles
+          developer standups with GitHub commits/PRs using Claude API, reducing manual reporting to
+          zero. I've also contributed to production products like{' '}
+          <a href="https://shoaibshamrez.netlify.app/uXL-LMS">uXL‑LMS</a> and{' '}
+          <a href="https://shoaibshamrez.netlify.app/uXL-POS">uXL‑POS</a> at{' '}
+          <a href="https://shoaibshamrez.netlify.app/">uExel</a>, where I work as a Full‑Stack
+          Engineer delivering responsive, maintainable applications in a collaborative team
+          environment.
         </p>
 
         <ul className="actions">

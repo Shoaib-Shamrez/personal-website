@@ -6,10 +6,11 @@ import ContactIcons from '@/components/Contact/ContactIcons';
 import EmailLink from '@/components/Contact/EmailLink';
 
 import PageWrapper from '../components/PageWrapper';
+import WhatsappLink from '@/components/Contact/WhatsApp';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: "Contact Michael D'Angelo via email @ hi@mldangelo.com",
+  description: 'Contact Shoaib Shamrez via email @ shoaibshamrez@gmail.com',
 };
 
 export default function ContactPage() {
@@ -24,8 +25,9 @@ export default function ContactPage() {
           </div>
         </header>
         <div className="email-at">
-          <p>Feel free to get in touch. You can email me at:</p>
+          <p>Feel free to get in touch. You can Contact me at:</p>
           <EmailLink />
+          <WhatsappLink />
         </div>
         <ContactIcons />
       </article>
