@@ -9,7 +9,7 @@ import PageWrapper from '../components/PageWrapper';
 
 export const metadata: Metadata = {
   title: 'Stats',
-  description: "Some statistics about Michael D'Angelo and mldangelo.com",
+  description: "Some statistics about Shoaib Shamrez and shoaibshamrez.netlify.app",
 };
 
 export default function StatsPage() {
