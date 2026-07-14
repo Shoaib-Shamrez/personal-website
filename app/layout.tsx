@@ -42,11 +42,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Shoaib Shamrez' }],
   creator: 'Shoaib Shamrez',
-  metadataBase: new URL('https://shoaibshamrez.netlify.com'),
+  metadataBase: new URL('https://shoaibshamrez.netlify.app'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://shoaibshamrez.netlify.com',
+    url: 'https://shoaibshamrez.netlify.app',
     siteName: 'Shoaib Shamrez',
     title: 'Shoaib Shamrez',
     description:

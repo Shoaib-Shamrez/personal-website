@@ -1,12 +1,10 @@
-export interface Skill
-{
+export interface Skill {
   title: string;
   competency: number; // 1–5
   category: string[];
 }
 
-export interface Category
-{
+export interface Category {
   name: string;
   color: string;
 }
@@ -105,7 +103,7 @@ const skills: Skill[] = [
     category: ['Databases'],
   },
   {
-    title: 'Posgress',
+    title: 'PostgreSQL/Postgres',
     competency: 3,
     category: ['Databases'],
   },
@@ -163,9 +161,7 @@ const colors: string[] = [
   '#747fff',
 ];
 
-const categories: Category[] = Array.from(
-  new Set(skills.flatMap(({ category }) => category)),
-)
+const categories: Category[] = Array.from(new Set(skills.flatMap(({ category }) => category)))
   .sort()
   .map((category, index) => ({
     name: category,

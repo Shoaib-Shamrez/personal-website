@@ -1,5 +1,4 @@
-export interface Project
-{
+export interface Project {
   title: string;
   subtitle?: string;
   link?: string;
@@ -11,20 +10,21 @@ export interface Project
 
 const data: Project[] = [
   {
-    title: 'StandupBot Intelligence',
+    title: 'Meta360',
     subtitle: 'Internal Tool – AI-Powered Standup Reconciliation Engine',
     image: '/images/projects/dashboard_standup.png',
     github: 'https://github.com/uExel/StandupBot',
     link: 'https://app.meta360.dev/',
     date: '2026-05-29',
     desc:
-      'Built a full‑stack Slack bot that automates daily standup collection and reconciles “said vs built” using Claude AI. ' +
-      'Slack bot captures standups via slash commands and modals (Socket Mode). GitHub webhooks ingest commits and PRs, linked to developers via /linkgithub. ' +
-      'A daily cron job (5:30 PM PKT) fetches each developer’s plan + actual output (commits, PRs, manual tasks) and calls Claude Haiku to generate alignment scores, flags (on‑track/at‑risk/blocked), and plain‑English gap analysis. ' +
-      'Results are stored in PostgreSQL; a consolidated Slack digest and per‑developer DMs are posted automatically. ' +
-      'Added JWT authentication, paginated REST APIs, weekly summaries for managers, and manual task logging (/task‑done) for non‑developers. ' +
-      'Built a React dashboard (TypeScript, Tailwind) that displays said‑vs‑built, commit counts, and trends. ' +
-      'Deployed on Digital Ocean with PM2. System eliminates manual status reporting and provides real‑time engineering accountability.'
+      'Built Meta360, a full‑stack multi‑tenant SaaS platform that automates daily standup collection and reconciles "said vs built" using Claude AI. ' +
+      'A Slack bot (Socket Mode) captures standups via slash commands and modals, while GitHub webhooks ingest commits and PRs linked to developers through /linkgithub. ' +
+      "A daily cron job (5:30 PM PKT) compares each developer's stated plan against their actual output — commits, PRs, and manual tasks — and calls Claude Haiku to generate alignment scores, status flags (on‑track / at‑risk / blocked), and plain‑English gap analysis. " +
+      'Results are stored in a 15‑table PostgreSQL schema (TypeORM) with org‑level multi‑tenant isolation and encrypted token storage (AES‑256‑GCM); a consolidated Slack digest and per‑developer DMs post automatically. ' +
+      'Added JWT authentication, paginated REST APIs, weekly manager summaries, RBAC, and manual task logging (/task‑done) for non‑developers. ' +
+      'Built a React + TypeScript dashboard (Tailwind) showing said‑vs‑built comparisons, commit trends, and a committer leaderboard. ' +
+      'Deployed on Digital Ocean with PM2, live at app.meta360.dev, serving 30+ developers across multiple paying organizations. ' +
+      'Eliminates manual status reporting and gives engineering teams real‑time, evidence‑based accountability.',
   },
   {
     title: 'OmniScribe AI',
@@ -119,10 +119,7 @@ const data: Project[] = [
       'Supports live editing of HTML, CSS, and JavaScript with real-time preview rendering. ' +
       'Focused on smooth editor performance, clean UI layout, and accurate code execution. ' +
       'Implemented using react-codemirror-2 to provide a developer-friendly editing experience.',
-  }
-
-
-
+  },
 ];
 
 export default data;
