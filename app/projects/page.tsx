@@ -1,0 +1,31 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import React from 'react';
+
+import ProjectsList from '@/components/Projects/ProjectsList';
+import data from '@/data/projects';
+
+import PageWrapper from '../components/PageWrapper';
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description: "Shoaib's projects.",
+};
+
+export default function ProjectsPage() {
+  return (
+    <PageWrapper>
+      <article className="post" id="projects">
+        <header>
+          <div className="title">
+            <h2>
+              <Link href="/projects">Projects</Link>
+            </h2>
+            <p>A selection of projects that I&apos;m not too ashamed of</p>
+          </div>
+        </header>
+        <ProjectsList data={data} />
+      </article>
+    </PageWrapper>
+  );
+}

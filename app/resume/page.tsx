@@ -1,0 +1,80 @@
+import type { Metadata } from 'next';
+import React from 'react';
+
+import Courses from '@/components/Resume/Courses';
+import Education from '@/components/Resume/Education';
+import Experience from '@/components/Resume/Experience';
+import References from '@/components/Resume/References';
+import Skills from '@/components/Resume/Skills';
+import courses from '@/data/resume/Certification';
+import degrees from '@/data/resume/degrees';
+import { categories, skills } from '@/data/resume/skills';
+import work from '@/data/resume/work';
+import PageWrapper from '../components/PageWrapper';
+
+export const metadata: Metadata = {
+  title: 'Resume',
+  description:
+    'Shoaib Shamrez Resume. Standup intelligence System, Task Flow, uXL-LMS, uXL-POS, MERN, Nestjs, Next.js Graduate, Arid Agriculture University.',
+};
+
+const sections = [
+  { name: 'Education', id: 'education' },
+  { name: 'Experience', id: 'experience' },
+  { name: 'Skills', id: 'skills' },
+  { name: 'Courses', id: 'courses' },
+  { name: 'References', id: 'references' },
+];
+
+export default function ResumePage() {
+  return (
+    <PageWrapper>
+      <article className="post" id="resume">
+        <header>
+          <div className="title">
+            <h2>Resume</h2>
+            <div className="link-container">
+              {sections.map((section) => (
+                <h4 key={section.id}>
+                  <a href={`#${section.id}`}>{section.name}</a>
+                </h4>
+              ))}
+            </div>
+          </div>
+          <a
+            href="/Shoaib_Shamrez.pdf"
+            download="Shoaib_Shamrez_Resume.pdf"
+            className="button resume-download"
+          >
+            Download Resume (PDF)
+          </a>
+        </header>
+
+        <section id="education" className="education">
+          <div className="link-to" />
+          <Education data={degrees} />
+        </section>
+
+        <section id="experience" className="experience">
+          <div className="link-to" />
+          <Experience data={work} />
+        </section>
+
+        <section id="skills" className="skills">
+          <div className="link-to" />
+          <Skills skills={skills} categories={categories} />
+        </section>
+
+        <section id="courses" className="courses">
+          <div className="link-to" />
+          <Courses data={courses} />
+        </section>
+
+        <section id="references" className="references">
+          <div className="link-to" />
+          <References />
+        </section>
+      </article>
+    </PageWrapper>
+  );
+}
