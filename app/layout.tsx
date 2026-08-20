@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: '%s | Shoaib Shamrez',
   },
   description:
-    'Full Stack Developer Portfolio and Personal Website of Shoaib Shamrez - showcasing projects, skills, and experience in web development.',
+    'Full Stack Developer & AWS Certified Solutions Architect - Personal website and portfolio of Shoaib Shamrez, showcasing projects, skills, and experience in web development and cloud architecture.',
   keywords: [
     'Shoaib Shamrez',
     'Shoaib',
@@ -39,6 +39,11 @@ export const metadata: Metadata = {
     'Full Stack Developer',
     'Web Developer',
     'Software Engineer',
+    'AWS Certified Solutions Architect',
+    'AWS Solutions Architect Associate',
+    'Cloud Architecture',
+    'NestJS Developer',
+    'React Developer Islamabad',
   ],
   authors: [{ name: 'Shoaib Shamrez' }],
   creator: 'Shoaib Shamrez',
@@ -50,7 +55,7 @@ export const metadata: Metadata = {
     siteName: 'Shoaib Shamrez',
     title: 'Shoaib Shamrez',
     description:
-      'Full Stack Developer Portfolio and Personal Website of Shoaib Shamrez - showcasing projects, skills, and experience in web development.',
+      'Full Stack Developer & AWS Certified Solutions Architect - Personal website and portfolio of Shoaib Shamrez, showcasing projects, skills, and experience in web development and cloud architecture.',
     images: [
       {
         url: '/images/me.jpg',
@@ -76,6 +81,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${sourceSans.variable} ${raleway.variable}`}>
+      <head>
+        {/* Set theme before paint to avoid a flash of the wrong theme */}
+        <script
+          // biome-ignore lint: inline bootstrap script must run before hydration
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body suppressHydrationWarning={true}>
         <div id="wrapper">
           <Navigation />

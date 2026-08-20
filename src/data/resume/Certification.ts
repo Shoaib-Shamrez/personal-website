@@ -4,10 +4,18 @@ export interface Certification {
   number: string;
   link: string;
   university: string;
-  category: 'Web' | 'Project Management' | 'Agile' | 'Quality';
+  category: 'Web' | 'Project Management' | 'Agile' | 'Quality' | 'Cloud';
 }
 
 const certifications: Certification[] = [
+  {
+    title: 'AWS Certified Solutions Architect – Associate',
+    number: 'Aug 2026 – Aug 2029',
+    date: 'August 2026',
+    link: '#',
+    university: 'Amazon Web Services',
+    category: 'Cloud',
+  },
   {
     title: 'Scrum Fundamentals Certified (SFC)',
     number: 'Credential ID: 1046276',

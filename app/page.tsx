@@ -5,7 +5,7 @@ import PageWrapper from './components/PageWrapper';
 
 export const metadata: Metadata = {
   description:
-    'Full Stack Developer Portfolio and Personal Website of Shoaib Shamrez - showcasing projects, skills, and experience in web development.',
+    'Full Stack Developer & AWS Certified Solutions Architect - Personal website and portfolio of Shoaib Shamrez, showcasing projects, skills, and experience in web development and cloud architecture.',
   verification: {
     google: '-9uQI5eQMVs0nDHTHsSBZPCTiDMWonTK6Fn9lJysvnM',
   },

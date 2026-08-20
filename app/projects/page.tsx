@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
-import Cell from '@/components/Projects/Cell';
+import ProjectsList from '@/components/Projects/ProjectsList';
 import data from '@/data/projects';
 
 import PageWrapper from '../components/PageWrapper';
@@ -24,9 +24,7 @@ export default function ProjectsPage() {
             <p>A selection of projects that I&apos;m not too ashamed of</p>
           </div>
         </header>
-        {data.map((project) => (
-          <Cell data={project} key={project.title} />
-        ))}
+        <ProjectsList data={data} />
       </article>
     </PageWrapper>
   );

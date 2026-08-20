@@ -14,7 +14,7 @@
       font-size: 0.9rem;
       margin: 0;
       padding: 1.25em;
-      background-color: rgba(_palette(bg), 0.7);
+      background-color: color-mix(in srgb, #{_palette(bg)} 70%, transparent);
       color: _palette(fg-bold);
       font-family: 'Raleway', Helvetica, sans-serif;
       z-index: 1000;
@@ -22,7 +22,7 @@
     }
 
     p:hover {
-      background-color: rgba(_palette(bg), 0.9);
+      background-color: color-mix(in srgb, #{_palette(bg)} 90%, transparent);
     }
   }
 

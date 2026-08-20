@@ -1,6 +1,6 @@
 export const aboutMarkdown = `# Intro
 
-I am Shoaib Shamrez, a Full-Stack Web Developer passionate about building **modern, responsive web applications**. I specialize in the **MERN stack, React.js, Node.js, TailwindCSS, Material UI, Ant Design, Typescript, React-Bootstrap and MySQL**. I have worked on projects ranging from **e-commerce platforms, Learning Management System (LMS), Point of Sale (POS) and API-driven applications**, and I’m always exploring new ways to turn ideas into clean, scalable, production-ready code. I'm currently expanding into cloud architecture, training onsite in Islamabad for the **AWS Solutions Architect Associate** certification.
+I am Shoaib Shamrez, a Full-Stack Web Developer and **AWS Certified Solutions Architect – Associate**, passionate about building **modern, responsive web applications**. I specialize in **React.js, Next.js, Node.js, NestJS, TypeScript, PostgreSQL, TailwindCSS, Material UI, and Ant Design**. I have worked on projects ranging from **e-commerce platforms, Learning Management System (LMS), Point of Sale (POS) and API-driven applications**, and I'm always exploring new ways to turn ideas into clean, scalable, production-ready code. Since earning my AWS certification, I've been focused on bringing cloud-native architecture, scalability, and security best practices into everything I build.
 
 In my spare time, I enjoy learning new technologies, contributing to small projects, and refining my coding and UI/UX skills. If you think I can be helpful to your project or idea, feel free to get in touch.
 
@@ -13,7 +13,7 @@ In my spare time, I enjoy learning new technologies, contributing to small proje
 - I’ve also worked on **e-commerce checkout flows**, dashboards, and dynamic web features, emphasizing **real-time validations and performance optimization**.
 - My flagship project is **Meta360** (live at app.meta360.dev), a multi-tenant SaaS platform I built and actively maintain, using Claude AI to reconcile Slack standups against GitHub activity — with a 15-table PostgreSQL schema, encrypted token storage, and org-level tenant isolation, now serving multiple paying organizations.
 - Along the way, I contributed to my learning by **experimenting with APIs, project management principles, and collaborative coding practices**.
-- Most recently, I've been building out my cloud fundamentals, currently pursuing the **AWS Solutions Architect Associate** certification through onsite training in Islamabad, to deepen my understanding of scalable, cloud-native infrastructure.
+- Most recently, I earned the **AWS Solutions Architect – Associate** certification, deepening my understanding of scalable, secure, cloud-native infrastructure — and I'm now bringing that into the systems I design and ship.
 
 # I Like
 
@@ -33,5 +33,5 @@ In my spare time, I enjoy learning new technologies, contributing to small proje
 
 - Creating impactful web applications that solve real-world problems.
 - Contributing to **open-source projects** to learn and give back to the community.
-- Continuously improving as a developer and exploring new technologies, including deepening my **cloud architecture and infrastructure** skills through certifications like AWS Solutions Architect Associate.  
+- Continuously improving as a developer and exploring new technologies — now going deeper into **cloud architecture and infrastructure**, building on my AWS Solutions Architect – Associate certification.  
 `;

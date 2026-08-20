@@ -41,6 +41,13 @@ export default function ResumePage() {
               ))}
             </div>
           </div>
+          <a
+            href="/Shoaib_Shamrez.pdf"
+            download="Shoaib_Shamrez_Resume.pdf"
+            className="button resume-download"
+          >
+            Download Resume (PDF)
+          </a>
         </header>
 
         <section id="education" className="education">

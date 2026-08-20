@@ -12,6 +12,7 @@ interface CoursesProps {
 }
 
 const categories: CertificationType['category'][] = [
+  'Cloud',
   'Web',
   'Project Management',
   'Agile',

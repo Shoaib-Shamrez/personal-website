@@ -233,3 +233,28 @@ body {
     display: initial;
   }
 }
+
+.theme-toggle {
+  @include vendor('display', 'flex');
+  align-items: center;
+  justify-content: center;
+  width: 3.5em;
+  height: 3.5em;
+  margin-top:1.5em;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  border-left: solid 1px _palette(border);
+  color: _palette(fg);
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: _palette(accent);
+  }
+
+  svg {
+    display: block;
+  }
+}

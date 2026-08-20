@@ -1,12 +1,13 @@
 import dayjs from 'dayjs';
 
-import Image from 'next/image';
 import React from 'react';
 
 import type { Project } from '@/data/projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faInternetExplorer } from '@fortawesome/free-brands-svg-icons';
+
+import Carousel from './Carousel';
 
 interface CellProps {
   data: Project;
@@ -40,9 +41,18 @@ const Cell: React.FC<CellProps> = ({ data }) => (
         </div>
       </header>
 
-      <a href={data.link} className="image">
-        <Image src={data.image} alt={data.title} width={600} height={400} />
-      </a>
+      <Carousel images={data.images} alt={data.title} />
+
+      {data.category.length > 0 && (
+        <div className="project-categories">
+          {data.category.map((cat) => (
+            <span className="project-category-badge" key={cat}>
+              {cat}
+            </span>
+          ))}
+        </div>
+      )}
+
       <div className="description">
         <p>{data.desc}</p>
       </div>

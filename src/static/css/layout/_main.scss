@@ -9,4 +9,5 @@
 #main {
   @include vendor('flex-grow', '1');
   width: 100%;
+  min-width: 0;
 }

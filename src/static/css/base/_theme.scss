@@ -1,0 +1,42 @@
+///
+/// Theme (Light / Dark)
+///
+/// Defines the CSS custom properties consumed by the $palette map in
+/// libs/_vars.scss. Toggled at runtime by setting `data-theme="dark"` (or
+/// `"light"`) on the <html> element — see components/Template/ThemeToggle.tsx.
+///
+
+:root {
+  --color-bg: #ffffff;
+  --color-bg-alt: #f4f4f4;
+  --color-fg: #646464;
+  --color-fg-bold: #3c3b3b;
+  --color-fg-light: #aaaaaa;
+  --color-border: rgba(160, 160, 160, 0.3);
+  --color-border-bg: rgba(160, 160, 160, 0.075);
+  --color-border-alt: rgba(160, 160, 160, 0.65);
+  --color-accent: #2e59ba;
+
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --color-bg: #12161f;
+  --color-bg-alt: #191f2b;
+  --color-fg: #aab2c0;
+  --color-fg-bold: #f1f3f7;
+  --color-fg-light: #6f7a8c;
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-border-bg: rgba(255, 255, 255, 0.045);
+  --color-border-alt: rgba(255, 255, 255, 0.22);
+  --color-accent: #5b8def;
+
+  color-scheme: dark;
+}
+
+html {
+  background-color: var(--color-bg);
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+}

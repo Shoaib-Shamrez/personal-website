@@ -2,7 +2,8 @@ export interface Project {
   title: string;
   subtitle?: string;
   link?: string;
-  image: string;
+  images: string[];
+  category: string[];
   date: string;
   desc: string;
   github?: string;
@@ -12,7 +13,8 @@ const data: Project[] = [
   {
     title: 'Meta360',
     subtitle: 'Internal Tool – AI-Powered Standup Reconciliation Engine',
-    image: '/images/projects/dashboard_standup.png',
+    images: ['/images/projects/dashboard_standup.png'],
+    category: ['SaaS', 'AI', 'Backend'],
     github: 'https://github.com/uExel/StandupBot',
     link: 'https://app.meta360.dev/',
     date: '2026-05-29',
@@ -29,7 +31,8 @@ const data: Project[] = [
   {
     title: 'OmniScribe AI',
     subtitle: 'Personal Project = Speech to Text Web App',
-    image: '/images/projects/omniScribe_Frontend.png',
+    images: ['/images/projects/OmniScribe_Frontend.png'],
+    category: ['AI', 'Backend'],
     github: 'https://github.com/Shoaib-Shamrez/OmniScribe',
     date: '2026-03-24',
     desc:
@@ -41,7 +44,8 @@ const data: Project[] = [
   {
     title: 'uXL-LMS Web Application',
     subtitle: 'Team Project — uExel Solutions',
-    image: '/images/projects/uxl-ms.png',
+    images: ['/images/projects/uxl-ms.png'],
+    category: ['Frontend', 'Team Project'],
     github: 'https://github.com/uExel/levelup_front/',
     date: '2024-03-01',
     desc:
@@ -53,7 +57,8 @@ const data: Project[] = [
   {
     title: 'uXL-POS Web Application',
     subtitle: 'Team Project — uExel Platform',
-    image: '/images/projects/uxl-POS.png',
+    images: ['/images/projects/uxl-POS.png'],
+    category: ['Frontend', 'Team Project'],
     github: 'https://github.com/uExel/uXL-POS',
     date: '2024-05-15',
     desc:
@@ -64,7 +69,8 @@ const data: Project[] = [
   {
     title: 'TaskFlow',
     subtitle: 'Personal Project — Full-Stack Task Management App',
-    image: '/images/projects/login.jpeg',
+    images: ['/images/projects/login.jpeg', '/images/projects/develop-board.jpeg'],
+    category: ['Full Stack', 'Frontend'],
     github: 'https://github.com/Shoaib-Shamrez/TaskFlow',
     date: '2024-06-10',
     desc:
@@ -77,7 +83,12 @@ const data: Project[] = [
     title: 'Piano Trainer',
     subtitle: 'Chrome Extension — Virtual Piano Learning Tool',
     github: 'https://github.com/Shoaib-Shamrez/Piano-Trainer',
-    image: '/images/projects/Piano_trainer.jpg',
+    images: [
+      '/images/projects/Piano_trainer.jpg',
+      '/images/projects/1767849030106.jpg',
+      '/images/projects/1767849030037.jpg',
+    ],
+    category: ['Chrome Extension', 'Frontend'],
     date: '2024-07-05',
     desc:
       'Developed a Chrome Extension that allows users to play a virtual piano and learn songs directly in the browser. ' +
@@ -87,7 +98,8 @@ const data: Project[] = [
   {
     title: 'Lottery Results Platform',
     subtitle: 'Results-Driven Web Application',
-    image: '/images/projects/Lottery.png',
+    images: ['/images/projects/Lottery.png'],
+    category: ['Full Stack', 'Frontend'],
     github: 'https://github.com/Shoaib-Shamrez/LotteryResults',
     date: '2025-11-15',
     desc:
@@ -99,7 +111,8 @@ const data: Project[] = [
   {
     title: 'Elegant Store - Ecomerce Website',
     subtitle: 'Horizon Tech Services',
-    image: '/images/projects/Elegant-store.jpg',
+    images: ['/images/projects/Elegant-store.jpg', '/images/projects/1767849030003.jpg'],
+    category: ['Full Stack', 'E-commerce'],
     github: 'https://github.com/Shoaib-Shamrez/Elegant-Store',
     date: '2024-12-22',
     desc:
@@ -112,7 +125,8 @@ const data: Project[] = [
     title: 'Online Code Editor (CodePen Clone)',
     subtitle: 'Frontend Web Application',
     github: 'https://github.com/Shoaib-Shamrez/CodeEditor',
-    image: '/images/projects/Code-Editor-2.jpg',
+    images: ['/images/projects/Code-Editor-2.jpg', '/images/projects/Code-Editor.jpg'],
+    category: ['Frontend'],
     date: '2024-05-30',
     desc:
       'A browser-based code editor inspired by CodePen, built using React and CodeMirror. ' +

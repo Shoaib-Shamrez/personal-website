@@ -53,12 +53,12 @@ const data: StatData[] = [
   {
     key: 'tech',
     label: 'Core technologies',
-    value: 'MERN, Tailwind, MUI, Ant',
+    value: 'React, NestJS, PostgreSQL, AWS',
   },
   {
     key: 'certification',
     label: 'Certification',
-    value: 'NAVTTC (2022)',
+    value: 'AWS Solutions Architect – Associate',
   },
   {
     key: 'location',

@@ -43,7 +43,7 @@ button,
     color: _palette(accent) !important;
 
     &:active {
-      background-color: rgba(_palette(accent), 0.05);
+      background-color: color-mix(in srgb, #{_palette(accent)} 5%, transparent);
     }
   }
 

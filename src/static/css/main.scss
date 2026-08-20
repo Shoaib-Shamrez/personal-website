@@ -40,6 +40,7 @@
 
 // Base.
 
+@import 'base/theme';
 @import 'base/page';
 @import 'base/typography';
 
@@ -72,6 +73,7 @@
 
 @import 'pages/contact';
 @import 'pages/notFound';
+@import 'pages/projects';
 @import 'pages/resume';
 @import 'pages/skills';
 @import 'pages/stats';

@@ -135,6 +135,45 @@ const skills: Skill[] = [
     category: ['Deployment'],
   },
 
+  // Cloud & DevOps
+  {
+    title: 'AWS (EC2, RDS, IAM)',
+    competency: 3,
+    category: ['Cloud'],
+  },
+  {
+    title: 'Docker',
+    competency: 3,
+    category: ['Cloud', 'Tools'],
+  },
+  {
+    title: 'CI/CD (GitHub Actions)',
+    competency: 3,
+    category: ['Cloud', 'Tools'],
+  },
+
+  // Backend (additional)
+  {
+    title: 'FastAPI',
+    competency: 3,
+    category: ['Backend', 'Web Development'],
+  },
+  {
+    title: 'Python',
+    competency: 3,
+    category: ['Languages', 'Backend'],
+  },
+  {
+    title: 'JWT Authentication',
+    competency: 4,
+    category: ['Backend'],
+  },
+  {
+    title: 'Redis',
+    competency: 3,
+    category: ['Databases'],
+  },
+
   // Other
   {
     title: 'Chrome Extensions',
@@ -151,6 +190,7 @@ const skills: Skill[] = [
 // Colors must match number of categories
 const colors: string[] = [
   '#6968b3',
+  '#f2994a', // Cloud — AWS-orange accent
   '#37b1f5',
   '#40494e',
   '#515dd4',
@@ -159,6 +199,7 @@ const colors: string[] = [
   '#3896e2',
   '#64cb7b',
   '#747fff',
+  '#5aa469',
 ];
 
 const categories: Category[] = Array.from(new Set(skills.flatMap(({ category }) => category)))
